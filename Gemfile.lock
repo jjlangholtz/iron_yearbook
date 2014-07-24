@@ -30,9 +30,6 @@ GEM
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.7)
-    bourbon (3.2.3)
-      sass (~> 3.2)
-      thor
     builder (3.2.2)
     capybara (2.4.1)
       mime-types (>= 1.16)
@@ -100,9 +97,6 @@ GEM
     mini_portile (0.6.0)
     minitest (5.4.0)
     multi_json (1.10.1)
-    neat (1.5.1)
-      bourbon (>= 3.1)
-      sass (~> 3.2.19)
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
     omniauth (1.2.2)
@@ -148,7 +142,6 @@ GEM
       ffi (>= 0.5.0)
     rdoc (4.1.1)
       json (~> 1.4)
-    refills (0.0.2)
     rspec (3.0.0)
       rspec-core (~> 3.0.0)
       rspec-expectations (~> 3.0.0)
@@ -218,7 +211,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bourbon
   capybara
   coffee-rails (~> 4.0.0)
   database_cleaner
@@ -227,16 +219,14 @@ DEPENDENCIES
   guard-rspec
   jbuilder (~> 2.0)
   jquery-rails
-  neat
   omniauth
   pg
   rails (= 4.1.4)
   rails-assets-backbone
   rails-assets-underscore
   rails_12factor
-  refills
   rspec-rails (~> 3.0.1)
-  sass-rails (~> 4.0.3)
+  sass-rails
   sdoc (~> 0.4.0)
   shoulda-matchers
   spring
