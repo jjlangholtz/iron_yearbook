@@ -11,12 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140724185528) do
+ActiveRecord::Schema.define(version: 20140725003815) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "students", force: true do |t|
+    t.string   "name"
+    t.string   "twitter"
+    t.string   "photo_uid"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -31,7 +40,7 @@ ActiveRecord::Schema.define(version: 20140724185528) do
     t.datetime "updated_at"
   end
 
-  add_index "students", ["email"], name: "index_students_on_email", unique: true, using: :btree
-  add_index "students", ["reset_password_token"], name: "index_students_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end
