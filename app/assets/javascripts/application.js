@@ -14,4 +14,16 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
-//= require_tree .
+//= require models/student
+//= require collections/students
+//= require views/student-view
+//= require views/app-view
+//= require routers/router
+
+var app = app || {};
+
+$(function () {
+  'use strict';
+
+  new app.AppView();
+});

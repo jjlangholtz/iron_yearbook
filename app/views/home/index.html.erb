@@ -7,10 +7,17 @@
 </head>
 <body>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+  <section id="studentapp">
+    <section id="main">
+      <p class="welcome">Welcome to the Iron Yearbook</p>
+    </section>
+  </section>
 
-<p class="welcome">Welcome to the Iron Yearbook</p>
+  <script type="text/template" id="student-template">
+    <div class="view">
+      <h1><%= name %></h1>
+    </div>
+  </script>
 
 <%= javascript_include_tag 'application' %>
 </body>
