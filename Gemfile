@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 ruby '2.1.2'
 
@@ -9,7 +10,7 @@ gem 'jquery-rails'
 gem 'omniauth'
 gem 'pg'
 gem 'rails', '4.1.4'
-gem 'backbone-on-rails'
+gem 'rails-assets-backbone'
 gem 'sass-rails'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'uglifier', '>= 1.3.0'
