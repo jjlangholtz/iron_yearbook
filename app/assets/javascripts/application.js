@@ -14,16 +14,10 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
-//= require models/student
-//= require collections/students
-//= require views/student-view
-//= require views/app-view
-//= require routers/router
-
-var app = app || {};
-
-$(function () {
-  'use strict';
-
-  new app.AppView();
-});
+//= require iron_yearbook
+//= require_tree ../templates
+//= require_tree ./models
+//= require_tree ./collections
+//= require_tree ./views
+//= require_tree ./routers
+//= require_tree .

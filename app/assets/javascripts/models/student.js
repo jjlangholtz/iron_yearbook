@@ -1,15 +1,3 @@
-/* global Backbone */
-var app = app || {};
+IronYearbook.Models.Student = Backbone.Model.extend({
 
-(function () {
-  'use strict';
-
-  app.Student = Backbone.Model.extend({
-    defaults: {
-      title: '',
-      twitter: ''
-    },
-
-    urlRoot: '/api/v1/students'
-  });
-})();
+});

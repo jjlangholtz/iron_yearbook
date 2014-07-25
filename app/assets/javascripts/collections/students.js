@@ -1,14 +1,5 @@
-/* global Backbone */
-var app = app || {};
+IronYearbook.Collections.Students = Backbone.Collection.extend({
 
-(function () {
-  'use strict';
+  model: IronYearbook.Models.Student
 
-  var Students = Backbone.Collection.extend({
-    model: app.Student,
-
-    url: 'api/v1/students',
-  });
-
-  app.students = new Students();
-})();
+});
