@@ -1,32 +1,24 @@
-<button id="start">Start</button>
 <div id="students">
 </div>
 
 <div class="mainWrap">
-      <container class="vidContainer">
-        <video src="/images/2227915.mp4"
-          poster="/images/stock-footage-blacksmith-strikes-red-hot-iron-sparks-fly-closeup.jpg"
-          width="1200"
-          preload="auto"
-          loop>
-        </video>
+  <container class="vidContainer">
+    <section>
+      <a href="#"><div class="startButton">
+        <%= image_tag 'button.png', id: 'start' %>
+      </div></a>
 
-        <section>
-          <a href="#"><div class="startButton">
-            <%= image_tag 'button.png' %>
-          </div></a>
+      <div class="headline">
 
-          <div class="headline">
-
-            <div><h1>Start something Powerful</h1></div>
-            <div class="logo"><img src="images/iron-yard-logo-finalWht.png"></div>
-          </container>
-        </section>
-      </div>
-    </div>
+        <div><h1>Start something Powerful</h1></div>
+        <div class="logo">
+          <%= image_tag 'iron-yard-logo-final.png' %>
+        </div>
+      </container>
+    </section>
+  </div>
+</div>
 
 <script id="studentTemplate" type="text/template">
-  <ul>
-    <li><img id="student<%%= id %>" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/896468/tSdgDEce3NmZIZK/large-headshot-placeholder.png"/></li>
-  </ul>
+    <img id="student<%%= id %>" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/896468/tSdgDEce3NmZIZK/large-headshot-placeholder.png"/>
 </script>
