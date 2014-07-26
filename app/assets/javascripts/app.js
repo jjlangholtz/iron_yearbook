@@ -1,5 +1,5 @@
 var app = app || {};
 
 $(function() {
-  new app.CohortView();
+  new app.HomeView();
 });
