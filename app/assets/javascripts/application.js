@@ -10,23 +10,12 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require todomvc
 //= require jquery
+//= require jquery_ujs
 //= require underscore
 //= require backbone
+//= require app
 //= require_tree ./models
 //= require_tree ./collections
 //= require_tree ./views
-//= require_tree ./views
 //= require_tree ./routers
-
-var app = app || {};
-var ENTER_KEY = 13;
-var ESC_KEY = 27;
-
-$(function () {
-  'use strict';
-
-  // kick things off by creating the `App`
-  new app.AppView();
-});
