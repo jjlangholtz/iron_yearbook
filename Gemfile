@@ -3,6 +3,7 @@ source 'https://rails-assets.org'
 
 ruby '2.1.2'
 
+gem 'bourbon'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise'
 gem 'faker'
