@@ -1,19 +1,19 @@
 @import 'bourbon';
+
 // Custom Styles
-/* body {
-  background-image: url(/images/stock-footage-blacksmith-strikes-red-hot-iron-sparks-fly-closeup.jpg);
+body {
+  font-family: helvetica, sans-serif;
+  background-image: image_url('stock-footage-blacksmith-strikes-red-hot-iron-sparks-fly-closeup.jpg');
   img {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: auto;
-    background-position-x: -100px;
-    background-position-y: -30px;
+    background-position-x: -300px;
+    background-position-y: 30px;
   }
-} */
-body {
-  @include background-image( linear-gradient(to left, #000, #F4F5F7));
 }
+
 .mainWrap  {
   margin: 0 auto;
 }
@@ -24,15 +24,14 @@ position: absolute;
 }
 
 section {
-
-  max-width: 85%;
+  max-width: 90%;
 }
 
 .startButton  {
   margin: 15% auto 0px auto;
-  padding-left: 130px;
+
   img {
-    width: 150px;
+    width: 120px;
   }
 }
 
@@ -42,13 +41,14 @@ section {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 61px;
   color: white;
   float: left;
 }
 
 .logo img {
   width: 90px;
-  margin-left: 50px;
-  margin-top: 45px;
+  margin-left: 45px;
+  margin-top: 42px;
+  float: left;
 }
