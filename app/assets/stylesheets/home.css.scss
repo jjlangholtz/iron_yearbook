@@ -42,12 +42,23 @@ h1 {
   float: left;
 }
 
-.student {
-
+.studentContainer img {
+  width: 150px;
+  float: left;
 }
 
+header {
+  width: 100%;
+  height: 75px;
+  @include outer-container;
+  background-color: black;
+  position: absolute;
 
-.studentContainer img {
-  width: 12%;
-  float: left;
+    button {
+      @include span-columns(2);
+
+    #campusHead {
+      @include span-columns(10);
+    }
+  }
 }
