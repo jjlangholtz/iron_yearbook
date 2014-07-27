@@ -3,7 +3,7 @@
   Student.create(
     name: Faker::Name.name,
     photo: File.open(File.join(Rails.root, 'app/assets/images/fallback/placeholder.png')),
-    group: ['Ruby on Rails', 'Front End Engineering'].sample,
+    group: ['ror', 'fee'].sample,
     description: Faker::Lorem.paragraph,
     twitter: "@#{username}",
     linkedin: Faker::Internet.url('linkedin.com', "/#{username}"),

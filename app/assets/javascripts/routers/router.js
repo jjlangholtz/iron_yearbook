@@ -6,7 +6,7 @@ var StudentRouter = Backbone.Router.extend({
     this.collection.fetch();
   },
   routes: {
-    'students/:id': 'studentDetails'
+    'students/:id': 'studentDetails',
   },
   studentDetails: function(id) {
     $('#students').hide();
