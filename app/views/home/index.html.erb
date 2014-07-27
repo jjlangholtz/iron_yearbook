@@ -19,6 +19,15 @@
   </div>
 </div>
 
+<div id="profile">
+</div>
+
 <script id="studentTemplate" type="text/template">
+  <a href="/#students/<%%= id %>">
     <img id="student<%%= id %>" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/896468/tSdgDEce3NmZIZK/large-headshot-placeholder.png"/>
+  </a>
+</script>
+<script id="profileTemplate" type="text/template">
+  <img id="student<%%= id %>" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/896468/tSdgDEce3NmZIZK/large-headshot-placeholder.png"/>
+  <h1><%%= name %></h1>
 </script>
