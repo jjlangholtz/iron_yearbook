@@ -3,32 +3,18 @@
 // Custom Styles
 body {
   font-family: helvetica, sans-serif;
-  background-image: image_url('stock-footage-blacksmith-strikes-red-hot-iron-sparks-fly-closeup.jpg');
-  img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    background-position-x: -300px;
-    background-position-y: 30px;
-  }
+}
+
+#bgVideo {
+  width: 100%;
 }
 
 .mainWrap  {
   margin: 0 auto;
 }
 
-.vidContainer {
-position: absolute;
-
-}
-
-section {
-  max-width: 90%;
-}
-
 .startButton  {
-  margin: 15% auto 0px auto;
+  margin: 5% auto 0px auto;
 
   img {
     width: 120px;
@@ -37,19 +23,32 @@ section {
 
 .headline {
   width: 80%;
-  margin: 0 auto;
+  position: absolute;
+  top: 0px;
+  padding: 10%;
+  text-shadow: 1px 2px black;
 }
 
 h1 {
-  font-size: 61px;
+  font-size: 3.5em;
   color: white;
   float: left;
 }
 
 .logo img {
-  width: 90px;
-  margin-left: 45px;
-  margin-top: 42px;
+  width: 96px;
+  margin-left: 28px;
+  margin-top: 26px;
+  float: left;
+}
+
+.student {
+
+}
+
+
+.studentContainer img {
+  width: 12%;
   float: left;
 }
 
