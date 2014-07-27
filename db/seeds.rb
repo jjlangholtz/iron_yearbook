@@ -2,6 +2,7 @@
   username = Faker::Internet.user_name
   Student.create(
     name: Faker::Name.name,
+    photo: File.open(File.join(Rails.root, 'app/assets/images/fallback/placeholder.png')),
     description: Faker::Lorem.paragraph,
     twitter: "@#{username}",
     linkedin: Faker::Internet.url('linkedin.com', "/#{username}"),

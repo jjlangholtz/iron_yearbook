@@ -25,11 +25,11 @@
 
 <script id="studentTemplate" type="text/template">
   <a href="/#students/<%%= id %>">
-    <img id="student<%%= id %>" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/896468/tSdgDEce3NmZIZK/large-headshot-placeholder.png"/>
+    <img id="student<%%= id %>" src="<%%= photo.url %>"/>
   </a>
 </script>
 <script id="profileTemplate" type="text/template">
-  <img id="student<%%= id %>" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/896468/tSdgDEce3NmZIZK/large-headshot-placeholder.png"/>
+  <img id="student<%%= id %>" src="<%%= photo.url %>"/>
   <h1><%%= name %></h1>
   <p><%%= website %></p>
   <p><%%= twitter %></p>
