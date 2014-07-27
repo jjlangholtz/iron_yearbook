@@ -1,11 +1,26 @@
+<div class="container">
+
+<header class = "topNav">
+  <nav class="views">
+    <button id='feeStudents'>Font End Eng. Class</button>
+    <button id='rorStudents'>Ruby on Rails Class</button>
+    <button id='backBtn'>Return</button>
+  </nav>
+  <div id="campusHead">
+    <h2>the iron yard academy durham cohort 1</h2>
+  </div>
+</header>
+
+
 <div id="students">
 </div>
+
 
 <div class="mainWrap">
 
   <div class="headline">
     <div class="startButton"><a href="#">
-      <%= image_tag 'button.png', id: 'start' %>
+      <%= image_tag 'button.png', id: "start" %>
     </div></a>
     <div>
       <h1>Start something Powerful.</h1>
@@ -20,28 +35,30 @@
 
 </div>
 
-<div id="profile">
+<script id="studentTemplate" type="text/template">
+    <img id="student<%%= id %>" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/896468/tSdgDEce3NmZIZK/large-headshot-placeholder.png"/>
+</script>
 </div>
 
-<script id="studentTemplate" type="text/template">
-  <a href="/#students/<%%= id %>">
-    <img id="student<%%= id %>" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/896468/tSdgDEce3NmZIZK/large-headshot-placeholder.png"/>
-  </a>
-</script>
-<script id="profileTemplate" type="text/template">
-  <img id="student<%%= id %>" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/896468/tSdgDEce3NmZIZK/large-headshot-placeholder.png"/>
-  <h1><%%= name %></h1>
-  <p><%%= website %></p>
-  <p><%%= twitter %></p>
-  <p><%%= linkedin %></p>
-  <p><%%= github %></p>
-  <p><%%= description %></p>
-</script>
 
-<header>
-  <button id='feeStudents'>Font End Eng. Class</button>
-  <button id='rorStudents'>Ruby on Rails Class</button>
-  <div id="campusHead">
-    <h2>the iron yard academy durham cohort 1</h2>
+
+<!-- <header class="navigation">
+  <div class="navigation-wrapper">
+    <a href="javascript:void(0)" class="logo">
+      <%= image_tag 'tiy-headLogo.png', id: "start" %>
+    </a>
+    <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+
+    <div class="navigation-tools">
+      <div class="search-bar">
+        <div class="search-and-submit">
+          <input type="search" placeholder="Enter Search" />
+          <button type="submit">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="">
+          </button>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="sign-up">LOGIN</a>
+    </div>
   </div>
-</header>
+</header> -->
