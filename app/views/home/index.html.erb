@@ -25,12 +25,13 @@
 
 <script id="studentTemplate" type="text/template">
   <a href="/#students/<%%= id %>">
-    <img id="student<%%= id %>" src="<%%= photo.url %>"/>
+    <img id="student<%%= id %>" src="<%%= photo.thumb.url %>"/>
   </a>
 </script>
 <script id="profileTemplate" type="text/template">
   <img id="student<%%= id %>" src="<%%= photo.url %>"/>
   <h1><%%= name %></h1>
+  <h2><%%= group %></h2>
   <p><%%= website %></p>
   <p><%%= twitter %></p>
   <p><%%= linkedin %></p>
