@@ -6,7 +6,7 @@ app.HomeView = Backbone.View.extend({
     'click': 'listStudents'
   },
   listStudents: function() {
-    this.$el.hide();
+    $('.mainWrap').hide();
     var cohortView = new app.CohortView();
   }
 });

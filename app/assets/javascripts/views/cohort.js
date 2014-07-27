@@ -10,7 +10,6 @@ app.CohortView = Backbone.View.extend({
     this.listenTo(this.collection, 'reset', this.render);
   },
   render: function() {
-    this.$el.append();
     this.collection.each(function(student) {
       this.renderStudent(student);
     }, this);

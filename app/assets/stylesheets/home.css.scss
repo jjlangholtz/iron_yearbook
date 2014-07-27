@@ -1,5 +1,3 @@
-@import 'bourbon';
-
 // Custom Styles
 body {
   font-family: helvetica, sans-serif;
@@ -61,4 +59,14 @@ header {
       @include span-columns(10);
     }
   }
+}
+
+.studentContainer img {
+  width: 200px;
+  float: left;
+}
+
+.profileContainer img {
+  width: 200px;
+  float: left;
 }
