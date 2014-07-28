@@ -1,13 +1,19 @@
 <div class="container">
 
-<header class = "topNav">
-  <nav class="views">
-    <a href="#fee" id="fee">Front End Engineering</a>
-    <a href="#ror" id="ror">Ruby on Rails</a>
-    <a href="#directory" id="directory">Return</a>
-  </nav>
-  <div id="campusHead">
-    <h2>the iron yard academy durham cohort 1</h2>
+<header class="navigation">
+  <div class="navigation-wrapper">
+    <div class="nav">
+      <ul id="navigation-menu">
+        <li class="nav-link"><a href="#ror">Ruby on Rails</a></li>
+        <li class="nav-link"><a href="#fee">Front End Engineering</a></li>
+        <li class="nav-link"><a href="#both">The Iron Yard First Cohort</a></li>
+      </ul>
+    </div>
+      <%= link_to 'http://academy.smashingboxes.com', class: 'logo' do %>
+        <%= image_tag 'tiy-headLogo.png' %>
+      <% end %>
+      <%= link_to 'Sign in', new_user_session_path, class: 'sign-up' %>
+    </div>
   </div>
 </header>
 

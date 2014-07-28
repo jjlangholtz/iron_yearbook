@@ -1,5 +1,5 @@
 $(function(){
-  $('.topNav').hide();
+  $('.navigation').hide();
 });
 
 var app = app || {};
@@ -11,7 +11,7 @@ app.HomeView = Backbone.View.extend({
   },
   listStudents: function() {
     $('.mainWrap').hide();
-    $('.topNav').show();
+    $('.navigation').show();
     var cohortView = new app.CohortView();
   }
 });
