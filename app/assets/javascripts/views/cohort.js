@@ -8,7 +8,6 @@ app.CohortView = Backbone.View.extend({
     this.render();
     this.listenTo(this.collection, 'add', this.renderStudent);
     this.listenTo(this.collection, 'reset', this.render);
-    this.listenTo(this.collection, 'filter', this.filterAll);
   },
   render: function() {
     this.collection.each(function(student) {
@@ -20,11 +19,5 @@ app.CohortView = Backbone.View.extend({
       model: student
     });
     this.$el.append(studentView.render().el);
-  },
-  filterAll: function() {
-    this.collection.each(this.filterOne, this);
-  },
-  filterOne: function() {
-    student.trigger('visible');
   }
 });
