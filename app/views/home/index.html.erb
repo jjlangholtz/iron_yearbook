@@ -18,17 +18,17 @@
 
 <div class="mainWrap">
 
-  <div class="headline">
+
     <div class="startButton"><a href="#">
       <%= image_tag 'button.png', id: "start" %>
     </div></a>
     <div>
-      <h1>Start something Powerful.</h1>
+      <h1>Start Something Powerful.</h1>
     </div>
     <div class="logo">
       <%= image_tag 'iron-yard-logo-finalWht.png', id: "start" %>
     </div>
-  </div>
+
     <div>
       <video id="bgVideo" src="http://cl.ly/1H3b2u0m3v0b/download/4915400.mp4" autoplay="true" loop="true" muted="true"></video>
     </div>
@@ -36,29 +36,37 @@
 </div>
 
 <script id="studentTemplate" type="text/template">
+
     <img id="student<%%= id %>" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/896468/tSdgDEce3NmZIZK/large-headshot-placeholder.png"/>
+
+  <a href="/#students/<%%= id %>">
+    <img id="student<%%= id %>" src="<%%= photo.url %>"/>
+  </a>
 </script>
-</div>
 
+<script id="profileTemplate" type="text/template">
 
-
-<!-- <header class="navigation">
-  <div class="navigation-wrapper">
-    <a href="javascript:void(0)" class="logo">
-      <%= image_tag 'tiy-headLogo.png', id: "start" %>
-    </a>
-    <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
-
-    <div class="navigation-tools">
-      <div class="search-bar">
-        <div class="search-and-submit">
-          <input type="search" placeholder="Enter Search" />
-          <button type="submit">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="">
-          </button>
-        </div>
-      </div>
-      <a href="javascript:void(0)" class="sign-up">LOGIN</a>
+  <div class="profile">
+    <div class="ribbon-wrapper"><div class="ribbon">RoR</div></div>
+    <div class="student-image">
+      <img id="student<%%= id %>" src="<%%= photo.url %>"/>
+    </div>
+    <div class="profile-header">
+      <h1><%%= name %></h1>
+    </div>
+    <div class="profile-copy">
+      <p><%%= description %></p>
+    </div>
+    <div class="student-stats">
+      <ul>
+        <li><span><p><%%= website %></p></span></li>
+        <li><span><p><%%= twitter %></p></span></li>
+        <li><span><p><%%= linkedin %></p></span></li>
+        <li><span><p><%%= github %></p></span></li>
+        <li><span><p><%%= linkedin %></p></span></li>
+      </ul>
     </div>
   </div>
-</header> -->
+</script>
+
+</div>
