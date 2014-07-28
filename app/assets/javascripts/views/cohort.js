@@ -9,6 +9,9 @@ app.CohortView = Backbone.View.extend({
     this.listenTo(this.collection, 'add', this.renderStudent);
     this.listenTo(this.collection, 'reset', this.render);
   },
+  events: {
+    'click .hover-tile-outer': 'studentDetails'
+  },
   render: function() {
     this.collection.each(function(student) {
       this.renderStudent(student);
@@ -19,5 +22,9 @@ app.CohortView = Backbone.View.extend({
       model: student
     });
     this.$el.append(studentView.render().el);
+  },
+  studentDetails: function(e) {
+    var studentID = e.currentTarget.id
+    app.StudentRouter.navigate('students/' + studentID, {trigger: true});
   }
 });

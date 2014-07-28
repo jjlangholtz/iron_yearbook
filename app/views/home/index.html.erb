@@ -38,7 +38,7 @@
 </div>
 
 <script id="studentTemplate" type="text/template">
-  <div class="hover-tile-outer" style="background-image: url('<%%= photo.url %>')">
+  <div id="<%%= id %>" class="hover-tile-outer" style="background-image: url('<%%= photo.url %>')">
     <div class="hover-tile-container">
       <div class="hover-tile hover-tile-visible">
         <%%= name %>
@@ -52,8 +52,28 @@
 </script>
 
 <script id="profileTemplate" type="text/template">
+<div class="card">
+  <div class="card-image">
+    <img src="<%%= photo.url %>" alt="">
+  </div>
+  <div class="card-header">
+    <%%= name %>
+  </div>
+  <div class="card-copy">
+    <p><%%= description %></p>
+  </div>
+  <div class="card-stats">
+    <ul>
+      <li><a href="<%%= twitter %>"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="<%%= linkedin %>"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="<%%= github %>"><i class="fa fa-github"></i></a></li>
+    </ul>
+  </div>
+</div>
+</script>
+
+<script id="#profileTemplate" type="text/template">
   <div class="side-image">
-    <div class="images-wrapper" style="background-image: url('<%%= photo.url %>')"></div>
       <div class="content">
         <h4><%%= group === 'ror' ? 'Ruby on Rails' : 'Front End Engineering' %></h4>
         <h1><%%= name %></h1>
