@@ -38,33 +38,30 @@
 </div>
 
 <script id="studentTemplate" type="text/template">
-  <a href="/#students/<%%= id %>">
-    <img id="student<%%= id %>" src="<%%= photo.thumb.url %>"/>
-  </a>
-</script>
-<script id="profileTemplate" type="text/template">
-
-  <div class="profile">
-    <div class="ribbon-wrapper"><div class="ribbon">RoR</div></div>
-    <div class="student-image">
-      <img id="student<%%= id %>" src="<%%= photo.url %>"/>
-    </div>
-    <div class="profile-header">
-      <h1><%%= name %></h1>
-    </div>
-    <div class="profile-copy">
-      <p><%%= description %></p>
-    </div>
-    <div class="student-stats">
-      <ul>
-        <li><span><p><%%= website %></p></span></li>
-        <li><span><p><%%= twitter %></p></span></li>
-        <li><span><p><%%= linkedin %></p></span></li>
-        <li><span><p><%%= github %></p></span></li>
-        <li><span><p><%%= linkedin %></p></span></li>
-      </ul>
+  <div class="hover-tile-outer" style="background-image: url('<%%= photo.url %>')">
+    <div class="hover-tile-container">
+      <div class="hover-tile hover-tile-visible">
+        <%%= name %>
+      </div>
+      <div class="hover-tile hover-tile-hidden">
+        <h4></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, hic, dolore, labore,provident eligendi fugiat ad exercitationem.</p>
+      </div>
     </div>
   </div>
 </script>
 
-</div>
+<script id="profileTemplate" type="text/template">
+  <div class="side-image">
+    <div class="images-wrapper" style="background-image: url('<%%= photo.url %>')"></div>
+      <div class="content">
+        <h4><%%= group === 'ror' ? 'Ruby on Rails' : 'Front End Engineering' %></h4>
+        <h1><%%= name %></h1>
+        <p><%%= description %></p>
+        <a href="<%%= website %>">Personal Website</a>
+        <a href="<%%= twitter %>">Twitter</a>
+        <a href="<%%= linkedin %>">LinkedIn</a>
+        <a href="<%%= github %>">Github</a>
+    </div>
+  </div>
+</script>
