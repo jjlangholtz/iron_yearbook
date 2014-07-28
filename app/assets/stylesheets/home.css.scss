@@ -58,28 +58,23 @@ header  {
     }
   }
 
-button{
+a{
   padding: 0;
 }
-button #feeStudent {
+a #fee {
   background-color: #f9d641;
   @include span-columns(1);
   text-align: center;
 }
 
-button #rorStudent {
+a #ror {
   background-color: #f9d641;
   @include span-columns(1);
 }
 
-button #backBtn {
+a #directory {
   background-color: #999;
   @include span-columns(1);
-}
-
-#feeStudent #rorStudent #backBtn {
-  font-size: .12em;
-  height: 85px;
 }
 
 .studentContainer img {

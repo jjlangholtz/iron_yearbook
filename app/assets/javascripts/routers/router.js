@@ -6,11 +6,13 @@ var StudentRouter = Backbone.Router.extend({
     this.collection.fetch();
   },
   routes: {
-    'directory': 'directory',
+    ':filter': 'filter',
     'students/:id': 'studentDetails',
   },
-  directory: function() {
+  filter: function(param) {
+    var filtered = this.collection.where({group: param});
     $('#profile').html('');
+    $('#students').html('');
     this.cohortView = new app.CohortView();
     $('#students').html(this.cohortView.render());
   },
