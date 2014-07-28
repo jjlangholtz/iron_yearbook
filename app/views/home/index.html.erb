@@ -4,39 +4,40 @@
   <nav class="views">
     <button id='feeStudents'>Font End Eng. Class</button>
     <button id='rorStudents'>Ruby on Rails Class</button>
-    <button id='backBtn'>Return</button>
+    <button id='backBtn'><a href="#directory">Return</a></button>
   </nav>
   <div id="campusHead">
     <h2>the iron yard academy durham cohort 1</h2>
   </div>
 </header>
 
-
 <div id="students">
 </div>
 
+<div id="profile">
+</div>
 
-<div class="mainWrap">
+  <div class="mainWrap">
 
-  <div class="headline">
-    <div class="startButton"><a href="#">
-      <%= image_tag 'button.png', id: "start" %>
-    </div></a>
-    <div>
-      <h1>Start something Powerful.</h1>
+    <div class="headline">
+      <div class="startButton"><a href="#">
+        <%= image_tag 'button.png', id: "start" %>
+      </div></a>
+      <div>
+        <h1>Start something Powerful.</h1>
+      </div>
+      <div class="logo">
+        <%= image_tag 'iron-yard-logo-finalWht.png', id: "start" %>
+      </div>
     </div>
-    <div class="logo">
-      <%= image_tag 'iron-yard-logo-finalWht.png', id: "start" %>
-    </div>
+      <div>
+        <video id="bgVideo" src="http://cl.ly/1H3b2u0m3v0b/download/4915400.mp4" autoplay="true" loop="true" muted="true"></video>
+      </div>
+
   </div>
-    <div>
-      <video id="bgVideo" src="http://cl.ly/1H3b2u0m3v0b/download/4915400.mp4" autoplay="true" loop="true" muted="true"></video>
-    </div>
-
 </div>
 
 <script id="studentTemplate" type="text/template">
-<<<<<<< HEAD
   <a href="/#students/<%%= id %>">
     <img id="student<%%= id %>" src="<%%= photo.thumb.url %>"/>
   </a>
@@ -51,7 +52,6 @@
   <p><%%= github %></p>
   <p><%%= description %></p>
 </script>
-</div>
 
 
 

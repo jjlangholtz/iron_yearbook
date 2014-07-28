@@ -6,10 +6,15 @@ var StudentRouter = Backbone.Router.extend({
     this.collection.fetch();
   },
   routes: {
+    'directory': 'list',
     'students/:id': 'studentDetails',
   },
+  list: function() {
+    $('#profile').html('');
+    this.cohortView = new app.CohortView();
+    $('#students').html(this.cohortView.render());
+  },
   studentDetails: function(id) {
-    $('#students').hide();
     var student = this.collection.get(id);
     this.profileView = new app.ProfileView({model: student});
     $('#profile').html(this.profileView.render().el);
