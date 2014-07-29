@@ -3,10 +3,9 @@
 
   @include span-columns(6);
   width: 20% !important;
-  background-position: bottom;
+  background-position-y: -50px;
   background-size: cover;
-  background-size: cover;
-  background-color: #BEB56E;
+  background-color: #ED372E;
   border: 1px solid $base-border-color;
   height: $hover-tile-height;
   cursor: pointer;
@@ -35,9 +34,9 @@
   .hover-tile-visible {
     color: transparentize(white, .3);
     font-size: 2em;
-    font-weight: 200;  
-    padding-top: 2em;
-    text-align: center;
+    font-weight: 500;
+    text-align: right;
+    line-height: 1em;
   }
 
   .hover-tile-hidden {
@@ -46,6 +45,8 @@
       margin-bottom: .5em;
     }
     p {
+      font-size: 2em;
+      line-height: 1em;
       color: transparentize(white, .3);
     }
   }
