@@ -137,7 +137,7 @@ Student.create(
 
 Student.create(
   name: 'Josh Tarkington',
-  photo: File.open(File.join(Rails.root, 'app/assets/images/seed/ichus.png')),
+  photo: File.open(File.join(Rails.root, 'app/assets/images/seed/Ichus.png')),
   group: 'ror',
   description: 'Is an aspiring writer and is a third of the way through his first book which he plans to finish as a trilogy and has another story ready to go as a movie script. He has degree in geology and held an internship with Charlotte-Mecklenburg Stormwater before joining The Iron Yard.',
   twitter: '',
