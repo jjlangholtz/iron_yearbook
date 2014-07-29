@@ -53,10 +53,18 @@ a{
 }
 
 #start {
-  @include position(absolute, 100px null null 50px);
+  @include position(absolute, 240px null null 100px);
   cursor: pointer;
+  width: 112px;
 }
 
 #headline {
-  @include position(absolute, 300px null null 100px);
+  @include position(absolute, 390px null null 100px);
+  font-size: 3.5em;
+  text-shadow: 1px 2px black;
+}
+
+#mainLogo {
+  @include position(absolute, 375px 280px  null null);
+  width: 112px;
 }
