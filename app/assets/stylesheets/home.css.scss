@@ -15,25 +15,6 @@ body {
   position: relative;
 }
 
-.startButton  {
-  width: 112px;
-  margin-top: 80px;
-  margin-left: 80px;
-
-  img {
-    width: 112px;
-
-    .headline {
-      width: 75%;
-      margin-left: 80px;
-      top: 30px;
-      text-shadow: 1px 2px black;
-      @include outer-container;
-      overflow: hidden;
-    }
-  }
-}
-
 h1 {
   font-size: 3.15em;
   color: white;
@@ -61,21 +42,6 @@ header  {
 a{
   padding: 0;
 }
-a #fee {
-  background-color: #f9d641;
-  @include span-columns(1);
-  text-align: center;
-}
-
-a #ror {
-  background-color: #f9d641;
-  @include span-columns(1);
-}
-
-a #directory {
-  background-color: #999;
-  @include span-columns(1);
-}
 
 #students {
   max-width: 100%;
@@ -84,4 +50,13 @@ a #directory {
 
 #profile {
   @include outer-container;
+}
+
+#start {
+  @include position(absolute, 100px null null 50px);
+  cursor: pointer;
+}
+
+#headline {
+  @include position(absolute, 300px null null 100px);
 }

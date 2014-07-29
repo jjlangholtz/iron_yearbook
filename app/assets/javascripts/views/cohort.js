@@ -10,7 +10,8 @@ app.CohortView = Backbone.View.extend({
     this.listenTo(this.collection, 'reset', this.render);
   },
   events: {
-    'click .hover-tile-outer': 'studentDetails'
+    'click .hover-tile-outer': 'studentDetails',
+    'click #ror': 'filterRor',
   },
   render: function() {
     this.collection.each(function(student) {
@@ -26,5 +27,8 @@ app.CohortView = Backbone.View.extend({
   studentDetails: function(e) {
     var studentID = e.currentTarget.id
     app.StudentRouter.navigate('students/' + studentID, {trigger: true});
+  },
+  filterRor: function(e) {
+    e.preventDefault();
   }
 });
