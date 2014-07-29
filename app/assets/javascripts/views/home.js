@@ -12,6 +12,6 @@ app.HomeView = Backbone.View.extend({
   listStudents: function() {
     $('.mainWrap').hide();
     $('.navigation').show();
-    var cohortView = new app.CohortView();
+    app.cohortView = new app.CohortView();
   }
 });

@@ -13,7 +13,6 @@ app.ProfileView = Backbone.View.extend({
     return this;
   },
   shrinkProfile: function() {
-    console.log('test');
     $('#profile').html('');
   }
 });

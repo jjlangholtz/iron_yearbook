@@ -8,6 +8,7 @@ app.CohortView = Backbone.View.extend({
     this.render();
     this.listenTo(this.collection, 'add', this.renderStudent);
     this.listenTo(this.collection, 'reset', this.render);
+    this.listenTo(this.collection, 'remove', console.log('models removed'));
   },
   events: {
     'click .hover-tile-outer': 'studentDetails',
